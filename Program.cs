@@ -35,15 +35,16 @@ namespace UnicamFattoriale
             }
 
             //Calcolo il fattoriale: qui ci sono degli errori!
-            int risultato = 0;
-            while (numero >= 0)
+            int backnumber=numero;
+            int risultato = 1;
+            while (numero >= 2)
             {
                 risultato *= numero;
                 numero--;
             }
 
             //Stampo il risultato
-            Console.WriteLine($"Il fattoriale di {numero} e' {risultato}");
+            Console.WriteLine($"Il fattoriale di {backnumber} e' {risultato}");
             //Attendo che l'utente prema un tasto prima di uscire, altrimenti 
             Console.ReadKey();
         }
