@@ -7,8 +7,8 @@ namespace UnicamFattoriale
         static void Main(string[] args)
         {
             //Stampo dei messaggi di cortesia per l'utente, così lo guido all'utilizzo del programma
-            Console.WriteLine("Questo programma calcola il fattoriale di un numero");
-            Console.Write("Digita un numero e premi invio: ");
+            Console.WriteLine("Questo programma calcola il fattoriale di un numero intero");
+            Console.Write("Digita un numero intero e premi invio: ");
 
             //Console.ReadLine si mette in attesa che l'utente digiti qualcosa e prema invio.
             //Quando ha premuto invio, il testo che ha digitato lo assegno ad una variabile di tipo string.
