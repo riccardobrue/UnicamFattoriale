@@ -29,7 +29,7 @@ namespace UnicamFattoriale
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("You have inserted a NON-Number");
+                    Console.WriteLine("You have not inserted an integer number");
 
                 }
             }
