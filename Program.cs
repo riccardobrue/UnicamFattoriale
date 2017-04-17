@@ -35,11 +35,25 @@ namespace UnicamFattoriale
             }
 
             //Calcolo il fattoriale: qui ci sono degli errori!
-            int backnumber=numero;
+            int backnumber = numero;
             int risultato = 1;
             while (numero >= 2)
             {
-                risultato *= numero;
+                try
+                {
+                    checked
+                    {
+                        risultato *= numero;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("The result is too big to be computed");
+                    Console.ReadKey();
+                    return;
+                }
+
+
                 numero--;
             }
 
